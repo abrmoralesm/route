@@ -3,7 +3,7 @@ import { Link, Route, Routes, useParams, Outlet } from "react-router-dom";
 
 const Home = () => <h1>Home</h1>;
 const SearchPage = () => {
-  const tacos = ["cochinita", "chili", "carnita", "chili pepper"];
+  const tacos = ["cochinita", "chili", "carnita", "chili pepper", "jar"];
 
   return (
     <div>
