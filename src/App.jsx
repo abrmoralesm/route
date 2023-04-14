@@ -1,6 +1,6 @@
 import "./App.css";
 import { Link, Route, Routes, useParams, Outlet } from "react-router-dom";
-
+import Avatar from "./componentes/Avatar";
 const Home = () => <h1>Home</h1>;
 const SearchPage = () => {
   const tacos = ["cochinita", "chili", "carnita", "chili pepper"];
@@ -43,6 +43,7 @@ function App() {
     <div className="App">
       <header>
         <h1> PonPon Chollos Sin Fin $</h1>
+        <Avatar title="Jar"/>
         <nav>
           <ul>
             <li>
@@ -53,6 +54,7 @@ function App() {
             </li>
           </ul>
         </nav>
+        <Avatar title="Jander">Otras cosas importantes</Avatar>
       </header>
       <Routes>
         <Route path="/" element={<Home />} />
